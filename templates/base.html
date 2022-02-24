@@ -1,0 +1,104 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    {% block link %}{% endblock link %}
+    <title>IAAS Nepal</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static "img/iasslogo.jpg"%}" alt="logo">
+            <a class="header__logo" href="">IAAS Nepal</a>
+        </div>
+        <nav class="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__items"><a href="/" class="nav__links">Home</a></li>
+                <li class="nav__items"><a href="/about/" class="nav__links">About</a></li>
+                <li class="nav__items"><button class="nav__links" onclick="dropdownmenu()">Our Assets <i class="uil uil-angle-down"></i></button>
+                    <ul class="nav__sub-list">
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Projects</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">IAAS Nepal Academy</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Newsletter</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Departments</a></li>
+                    </ul>
+                </li>
+                <li class="nav__items"><a href="" class="nav__links">Internship Hub</a></li>
+                <li class="nav__items"><button class="nav__links" onclick="dropdownsecondmenu()">LC<i class="uil uil-angle-down"></i></button>
+                    <ul class="nav__second-list">
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">ER</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Communication</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Finance</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">R&P</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Projects</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Campaign</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Exchange</a></li>
+                    </ul>
+                </li>
+                <li class="nav__items"><a href="" class="nav__links">Contact Us</a></li>
+                <li class="nav__items"><a href="" class="nav__links">Download</a></li>
+            </ul>
+            <i class="uil uil-bars" id="bar" onclick="navbar()"></i>
+        </nav>
+    </header>
+    {% block body %}{% endblock body %}
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>IAAS Nepal is the Biggest Agricultural Student Association in Nepal. We promote Agriculture and
+                    encourage Nepalese youth to get involved in developing and maintaing the Sustainability of
+                    Agricultural Sector in Nepal.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="uil uil-map-marker"></i></span>
+                        <span>Shyam Chowk<br>
+                            Dharan,Sunsari,<br>Nepal</span>
+                    </li>
+                    <li>
+                        <span><i class="uil uil-phone"></i></span>
+                        <p><a href="tel:+9779824168246">+9779824168246</a><br>
+                            <a href="tel:+9779864868643">+9779864868643</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="uil uil-envelope"></i></span>
+                        <p><a href="mailto:xulav12345@gmail.com">xulav12345@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>Copyright &copy; 2021 SulavChhetri. All Rights Reserved.</p>
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

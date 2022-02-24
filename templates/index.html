@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}<main>
+    <section>
+        <div class="mainpage">
+            <img class="mainpage__img" src="static/img/agriculturephoto.jpg" alt="Agriculture land">
+            <div class="mainpage__head">
+                <h1>Welcome,</h1>
+                <h2>to IAAS Nepal</h2>
+            </div>
+            <div class="mainpage__items">
+                <h1>Let's build a better</h1>
+                <h1>tomorrow, together.</h1>
+                <h2>Agriculture is the fundamental source of national prosperity.</h2>
+                <button>
+                    <a href="about/">Learn More</a>
+                    <i class="uil uil-arrow-circle-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scrolldown">
+            <i class="uil uil-mouse"><a style="text-decoration:none; color:white" href="#latest">Scrolldown</a></i>
+            <i class="uil uil-arrow-down"></i>
+        </div>
+    </section>
+    <section>
+        <div class="secondpage">
+            <div id="latest" class="latestpost">
+                <h1>Latest Posts</h1>
+            </div>
+            <div class="post">
+                <a href="">
+                    <div class="post__items">
+                        <img src="static/img/post1.png" alt="Climate Change">
+                        <h1>Youth for Environmental Conservation</h1>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="post__items">
+                        <img src="static/img/post2.jpg" alt="Climate Change">
+                        <h1>Agriculture and its importance</h1>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="post__items">
+                        <img src="static/img/post3.jpg" alt="Climate Change">
+                        <h1>Benefit of Green Vegetables</h1>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="post__items">
+                        <img src="static/img/post4.jpg" alt="Climate Change">
+                        <h1>Awareness Measure against Soil Erosoin</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="seemore">
+                <button>
+                    <a href="">See More</a>
+                    <i class="uil uil-arrow-circle-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="team">
+            <div>
+                <h1 id="teamtext">Our Team and Contributers</h1>
+            </div>
+            <div class="content">
+                <div class="imageslider">
+                    <img src="static/img/photo1.jpg" alt="Group of IAAS ">
+                    <img src="static/img/photo2.jpg" alt="Group of IAAS ">
+                    <img src="static/img/photo3.jpg" alt="Group of IAAS ">
+                    <img src="static/img/photo4.jpg" alt="Group of IAAS ">
+                    <img src="static/img/photo5.jpg" alt="Group of IAAS ">
+                </div>
+            </div>
+            <span onclick="side_slide(-1)" class="slideleft">
+                <i class="uil uil-angle-left"></i>
+            </span>
+            <span onclick="side_slide(1)" class="slideright">
+                <i class="uil uil-angle-right"></i>
+            </span>
+            <div class="dots">
+                <span class="dot" onclick="btmslider(1)"></span>
+                <span class="dot" onclick="btmslider(2)"></span>
+                <span class="dot" onclick="btmslider(3)"></span>
+                <span class="dot" onclick="btmslider(4)"></span>
+                <span class="dot" onclick="btmslider(5)"></span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="team">
+            <div>
+                <h1 id="partnerstext">Partners and Sponsors</h1>
+            </div>
+            <div class="partnerscontent">
+                <div class="partnersimageslider">
+                    <img src="static/img/logo1.jpg" alt="Logo of Partners and Sponsors">
+                    <img src="static/img/logo2.jpg" alt="Logo of Partners and Sponsors">
+                    <img src="static/img/logo3.jpg" alt="Logo of Partners and Sponsors">
+                    <img src="static/img/logo4.jpg" alt="Logo of Partners and Sponsors">
+                    <img src="static/img/logo5.jpg" alt="Logo of Partners and Sponsors">
+                </div>
+            </div>
+            <span onclick="side_logo(-1)" class="slideleft" id="logoleft">
+                <i class="uil uil-angle-left"></i>
+            </span>
+            <span onclick="side_logo(1)" class="slideright" id="logoright">
+                <i class="uil uil-angle-right"></i>
+            </span>
+            <div class="dots">
+                <span class="dot" onclick="logoslider(1)"></span>
+                <span class="dot" onclick="logoslider(2)"></span>
+                <span class="dot" onclick="logoslider(3)"></span>
+                <span class="dot" onclick="logoslider(4)"></span>
+                <span class="dot" onclick="logoslider(5)"></span>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

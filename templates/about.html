@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link%}
+<link rel="stylesheet" href="{% static 'css/about.css'%}">
+{% endblock %}
+
+{% block body %}
+<main>
+    <section>
+        <div class="about">
+            <h1 id='aboutus'>About Us</h1>
+            <p>We are the biggest association in the world that gathers students with agricultural related fields of
+                study.Our aim is to exchange ideas, knowledge and information among students.
+                IAAS (International Association of Students in Agricultural and Related Sciences) is the world biggest
+                student organization in the field of agriculture and related sciences. We are the branch of IAAS World
+                in Asia Pasific Region with the largest number of member in the World. We have more than 1200 active
+                members in Indonesia located in 11 Local Committees all over Indonesia. IAAS Indonesia is striving to
+                make Agriculture flourish in the eye of young Generation in Nepal by Creating Projects, Exchange
+                Programs, and Creative Campaigns.
+            </p>
+        </div>
+        <div class="increment">
+            <h1>IAAS Nepal have</h1>
+            <div class="post1">
+                <div class="post-items">
+                    <i class="uil uil-user-plus"></i>
+                    <div class="counter" data-target="1200"></div>
+                    <h2>Active Members</h2>
+                </div>
+                <div class="post-items">
+                    <i class="uil uil-grids"></i>
+                    <div class="counter" data-target="60"></div>
+                    <h2>Local Committees</h2>
+                </div>
+                <div class="post-items">
+                    <i class="uil uil-users-alt"></i>
+                    <div class="counter" data-target="40"></div>
+                    <h2>Partners and Sponsors</h2>
+                </div>
+                <div class="post-items">
+                    <i class="uil uil-estate"></i>
+                    <div class="counter" data-target="90"></div>
+                    <h2>Hosting places</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+         <div class="about">
+            <h1 id='ourcommitment'>Our Commitment</h1>
+            <p>We truly believe that preparing and providing the correct tools, connections and worldwide vision to
+                students related with the field of agriculture and life sciences will develop our members into better
+                professionals who will be highly qualified to affront the future challenges of our sector.
+
+                IAAS is striving towards creating a new generation of passionate and innovating leaders worldwide. We
+                are a global network of youth that is pursuing excellence by sharing experiences, knowledge and ideas,
+                creating future leaders of agriculture today! With a strong history and over 60 years of existence, we
+                believe that youth hold the key to change the world. We are taking the challenge to feed the continuous
+                growing population while improving the quality of people’s lives at the same time .</p>
+        </div>
+    </section>
+    <section>
+        <div class="about">
+            <h1 id="aim">Our Aim</h1>
+            <ul>
+                <li>Encouraging the exchange of ideas</li>
+                <li>Promoting cooperation with all students in agricultural sciences</li>
+                <li>Preparing our members for their future</li>
+                <li>Having impact on local societies</li>
+                <li>Demonstrating sustainable agriculture, economics, and food production</li>
+                <li>Making higher education systems accessible for everyone</li>
+            </ul>
+        </div>
+    </section>
+</main>
+<script src="{%static 'js/about.js'%}"></script>
+{% endblock %}
