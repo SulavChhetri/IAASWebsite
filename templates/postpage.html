@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/post.css'%}">
+{% endblock %}
+{% block body %}
+<main>
+    <div class="heading">{{post.title}}</div>
+    <div class="contents">
+        <div class="mainphoto">
+            <img class="thumbnail" src="/{{post.thumbnail}}" alt="">
+        </div>
+    </div>
+    <div class="contents1">
+        {{post.body|safe}}
+    </div>
+{% endblock %}

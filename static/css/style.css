@@ -101,11 +101,11 @@ nav ul li i{
 
 
 .nav__second-list{
-    padding: 0 20px 0 10px;
+    padding: 5px 20px 5px 10px;
     display: none;
     top: 70px;
     position: absolute;
-    height: 250px;
+    height: auto;
     z-index: 15;
     box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
     background-color: whitesmoke;

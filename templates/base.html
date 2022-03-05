@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
-    {% block link %}{% endblock link %}
+    {% block link %}{% endblock%}
     <title>IAAS Nepal</title>
 </head>
 
@@ -15,7 +15,7 @@
     <header>
         <div class="logo">
             <img src="{% static "img/iasslogo.jpg"%}" alt="logo">
-            <a class="header__logo" href="">IAAS Nepal</a>
+            <a class="header__logo" href="{% url 'home' %}">IAAS Nepal</a>
         </div>
         <nav class="nav-menu">
             <ul class="nav__list">
@@ -32,13 +32,19 @@
                 <li class="nav__items"><a href="" class="nav__links">Internship Hub</a></li>
                 <li class="nav__items"><button class="nav__links" onclick="dropdownsecondmenu()">LC<i class="uil uil-angle-down"></i></button>
                     <ul class="nav__second-list">
-                        <li class="nav__sub-items"><a href="" class="nav__sub-links">ER</a></li>
-                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Communication</a></li>
-                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Finance</a></li>
-                        <li class="nav__sub-items"><a href="" class="nav__sub-links">R&P</a></li>
-                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Projects</a></li>
-                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Campaign</a></li>
-                        <li class="nav__sub-items"><a href="" class="nav__sub-links">Exchange</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC AFU</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Lamjung</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Paklihawa</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Hicast</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Puranchaur</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC ERC</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC GPCAR</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC FU Fow</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Tikapur</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Khairani</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Bardibas</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Sindhuli</a></li>
+                        <li class="nav__sub-items"><a href="" class="nav__sub-links">LC Baitadi</a></li>
                     </ul>
                 </li>
                 <li class="nav__items"><a href="" class="nav__links">Contact Us</a></li>
@@ -78,25 +84,26 @@
                 <ul class="info">
                     <li>
                         <span><i class="uil uil-map-marker"></i></span>
-                        <span>Shyam Chowk<br>
-                            Dharan,Sunsari,<br>Nepal</span>
+                        <span>Rampur,<br>
+                            Chitwan,<br>Nepal</span>
                     </li>
                     <li>
                         <span><i class="uil uil-phone"></i></span>
-                        <p><a href="tel:+9779824168246">+9779824168246</a><br>
-                            <a href="tel:+9779864868643">+9779864868643</a>
+                        <p><a href="tel:+9779824168246">+97798********</a><br>
+                            <a href="tel:+9779864868643">+97798********</a>
                         </p>
                     </li>
                     <li>
                         <span><i class="uil uil-envelope"></i></span>
-                        <p><a href="mailto:xulav12345@gmail.com">xulav12345@gmail.com</a></p>
+                        <p><a href="mailto:iaasnepal@gmail.com">iaasnepal@gmail.com</a></p>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
     <div class="copyrighttext">
-        <p>Copyright &copy; 2021 SulavChhetri. All Rights Reserved.</p>
+        <p>Copyright &copy; 2021 IaasNepal. All Rights Reserved.</p>
+        <small>Developed by Sulav Thapa.</small>
     </div>
     <script src="{% static 'js/main.js' %}"></script>
 </body>

@@ -21,15 +21,16 @@ function dropdownsecondmenu(){
 
 function navbar(){
     const dropdown = document.querySelector('.nav__list');
-    const drop = document.querySelector('main');
+    const header = document.querySelector('header');
     if (dropdown.style.display === ""){
         dropdown.style.display ="flex";
-        drop.style.display ="";
+        header.style.position = "sticky";
+        header.style.top = "0";
+        header.style.zIndex = "9999";
     }
     else{
         dropdown.style.display ="";
-        drop.style.display ='block';
-        
+        header.style.position = "";
     }
 }
 

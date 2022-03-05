@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/post.css'%}">
+{% endblock %}
+{% block body %}
+<main>
+    <div class="heading">Posts</div>
+    <div class="post-list">
+        {% for post in posts %}
+        <a href="/posts/{{post.slug}}">
+            <div class="post__items">
+                <img src="/{{post.thumbnail}}" alt="Climate Change">
+                <h1>{{post.title}}</h1>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</main>
+
+{% endblock body %}
